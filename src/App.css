@@ -1,0 +1,24 @@
+.actionBtn {
+    @apply  p-5 rounded-full disabled:bg-red-300
+}
+
+.chordsContainer {
+  @apply flex gap-1 overflow-x-auto;
+}
+
+.chordButton {
+  @apply bg-blue-700 rounded-md text-sm px-1;
+}
+
+.chord2play {
+  @apply bg-red-700 px-1 rounded-sm relative w-10 text-center;
+}
+
+.chord2play::after {
+    content: "x";
+    @apply bg-red-100 text-red-800 absolute aspect-square leading-[8.5px] text-[10px] -top-1 rounded-full h-3 flex items-start justify-center -right-1;
+}
+
+.chordsToPlayContainer {
+  @apply flex flex-wrap gap-2 leading-tight border w-full p-5;
+}
